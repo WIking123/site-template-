@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{Название компании}} — {{короткое описание}}</title>
+  <meta name="description" content="{{Описание для поисковиков, 1–2 предложения}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">{{Название}}</a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1>{{Главный заголовок: что вы делаете и для кого}}</h1>
+        <p class="hero__text">{{Подзаголовок: главное преимущество в одном предложении}}</p>
+        <a href="#contacts" class="btn">{{Записаться / Заказать}}</a>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Услуги</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>{{Услуга 1}}</h3>
+            <p>{{Короткое описание}}</p>
+            <p class="card__price">{{от 000 грн}}</p>
+          </article>
+          <article class="card">
+            <h3>{{Услуга 2}}</h3>
+            <p>{{Короткое описание}}</p>
+            <p class="card__price">{{от 000 грн}}</p>
+          </article>
+          <article class="card">
+            <h3>{{Услуга 3}}</h3>
+            <p>{{Короткое описание}}</p>
+            <p class="card__price">{{от 000 грн}}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section--alt">
+      <div class="container about">
+        <div>
+          <h2>О нас</h2>
+          <p>{{2–3 предложения о компании: сколько лет работаете, чем отличаетесь}}</p>
+        </div>
+        <div class="about__image" aria-hidden="true">{{фото}}</div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2>Контакты</h2>
+        <ul class="contacts">
+          <li><strong>Телефон:</strong> <a href="tel:{{+380000000000}}">{{+380 00 000 00 00}}</a></li>
+          <li><strong>Email:</strong> <a href="mailto:{{info@example.com}}">{{info@example.com}}</a></li>
+          <li><strong>Адрес:</strong> {{Город, улица, дом}}</li>
+          <li><strong>Часы работы:</strong> {{Пн–Пт 9:00–18:00}}</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> {{Название компании}}
+    </div>
+  </footer>
+
+  <a href="tel:{{+380000000000}}" class="call-btn">Позвонить</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
